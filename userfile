@@ -1,0 +1,13 @@
+# Accept the filename from the user
+filename = input("Enter the filename: ")
+
+# Find the position of the last dot (.) in the filename
+dot_position = filename.rfind(".")
+
+# Check if a dot (.) exists in the filename
+if dot_position != -1:
+    # Extract the extension from the filename
+    extension = filename[dot_position + 1:]
+    print("The extension of the file is:", extension)
+else:
+    print("The file does not have an extension.")
